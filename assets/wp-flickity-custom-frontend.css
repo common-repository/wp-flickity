@@ -1,0 +1,23 @@
+.forceFullWidth .gallery-cell-image,
+.forceFullWidth .gallery-cell,
+.forceFullWidth .gallery-cell > img {
+    width: 100%;
+}
+
+.wp-flickity-post-enabled .gallery-cell > a {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    text-align: center;
+    outline: 0;
+    font-family: inherit;
+    color: white;
+    box-shadow: none;
+    text-shadow: 2px 2px 1px black;
+    font-size: inherit;
+}
+
+.wp-flickity-post-enabled .gallery-cell {
+    position: relative;
+}

@@ -1,0 +1,526 @@
+/**
+ * Admin CSS file for WP Flickity Plugin
+ */
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,900);
+.wp-flickity-menu {
+    font-family: "Raleway";
+    font-weight: 900;
+    border-bottom: 10px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(217, 217, 217, 0.29);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.wp-flickity-menu li a,
+.wp-flickity-menu li a:focus {
+    background-color: white;
+    padding: 0px 20px;
+    text-decoration: none;
+    line-height: inherit;
+    outline: 0!important;
+    overflow: hidden;
+    /* display: inline-block; */
+    text-align: center;
+    /* vertical-align: middle; */
+    font-size: 15px;
+    width: auto;
+    float: left;
+    /* box-sizing: border-box; */
+}
+
+.wp-flickity-menu li {
+    display: block;
+    overflow: hidden;
+    height: 50px;
+    line-height: 51px;
+    text-align: center;
+    float: left;
+    width: auto;
+}
+
+.wp-flickity-menu ul {
+    overflow: hidden;
+}
+
+.wp-flickity-menu li a > span {
+    line-height: inherit;
+    font-size: inherit;
+    display: inline-block;
+    height: auto;
+    width: auto;
+    /* float: left; */
+    /* overflow: hidden; */
+}
+
+.wp-flickity-menu li a.current-flickity-page {
+    background-color: #8C8;
+    color: white;
+}
+
+.wp-flickity-initial-message {
+    background-color: rgb(255, 255, 255);
+    color: #565656;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.wp-flickity-initial-message p {
+    font-size: 28px;
+    font-style: italic;
+    font-family: "Raleway";
+}
+
+.wp-flickity-initial-message p a {
+    color: #88CC88;
+    text-decoration: none;
+}
+
+.wp-flickity-menu li a:hover,
+.wp-flickity-menu li a.current-flickity-page {
+    box-shadow: 0px -5px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.wp-flickity-pagecontent input#submit {
+    border: 0;
+    box-shadow: 0px -5px 0px rgba(0, 0, 0, 0.24) inset;
+    width: auto!important;
+    border-radius: 0;
+    background-color: #88CC88;
+    text-shadow: none;
+    height: auto;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+table.table-of-flickities {
+    background-color: white;
+    width: 100%;
+    table-layout: fixed;
+}
+
+table.table-of-flickities td,
+table.table-of-flickities th {
+    text-align: left;
+    border: 10px solid transparent;
+    font-size: 1.2em;
+}
+
+a.flickity-edit-link:hover, a.flickity-remove-link:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+a.flickity-edit-link,a.flickity-remove-link {
+    background-color: #88CC88;
+    color: white;
+    text-transform: uppercase;
+    border: 10px solid #88CC88;
+    font-size: 12px;
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    transition: 0.2s ease-in-out;
+    opacity: 0.8;
+}
+a.flickity-remove-link {
+    border-color: #E57373;
+    background-color: #E57373;
+}
+
+ul.editing {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.wp-flickity-wrapper ul.editing {
+    opacity: 0.5;
+    float: left;
+    transition: 0.5s ease-in-out;
+}
+
+.wp-flickity-wrapper ul.editing:hover {
+    opacity: 1;
+}
+
+.wp-flickity-menu h2 > em {
+    color: #8C8;
+    font-weight: 700;
+}
+
+.wp-flickity-menu h2 {
+    color: #383838;
+    float: left;
+    width: auto;
+    display: block;
+    font-weight: 100;
+    margin: 15px 0px;
+    line-height: 20px;
+    background-color: white;
+    padding: 15px 30px;
+    margin-left: 12px;
+}
+
+.wp-flickity-menu {
+    overflow: hidden;
+}
+
+.wp-flickity-menu li {
+    margin-bottom: 0px!important;
+}
+
+div#flickity-images-wrapper {
+    float: left;
+}
+
+.flickity-slides {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+    position: relative;
+    margin-top: 20px;
+}
+
+button.upload-custom-img {
+    height: 100px;
+    width: 100px;
+    background-color: rgba(136, 204, 136, 0.42);
+    border: 0;
+    outline: 0!important;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: "Raleway";
+    font-size: 9px;
+    padding: 15px;
+}
+
+div#flickity-images-wrapper > img {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.wp-flickity-menu h3 {
+    color: #FFFFFF;
+    float: right;
+    width: auto;
+    display: block;
+    font-weight: 100;
+    margin: 15px 0px;
+    line-height: 20px;
+    background-color: #88CC88;
+    padding: 15px 30px;
+    margin-left: 12px;
+    font-family: "Open Sans";
+}
+
+div#flickity-images-wrapper {
+    list-style-type: none;
+    perspective-origin: center;
+    perspective: 5000px;
+    transform-style: preserve-3d;
+}
+
+div#flickity-images-wrapper li {
+    display: block;
+    float: left;
+    margin: 7px;
+    margin-top: 0px;
+    cursor: move;
+}
+
+div#flickity-images-wrapper li {
+     position: relative; 
+    transition: opacity 0.3s ease-in-out;
+}
+
+div#flickity-images-wrapper li .remove-flick-image {
+    position: absolute;
+    background-color: white;
+    top: 0;
+    cursor: pointer;
+    font-size: 20px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+}
+td.shortcode-flickity-col > pre {
+    background-color: #E0E0E0;
+    padding: 5px;
+    text-align: center;
+}
+.wp-flickity-pagecontent input[type="text"] {
+    line-height: 20px;
+    width: 33%;
+    min-width: 300px;
+    font-size: 20px;
+}
+
+#flickity-query-posts {
+    width: auto;
+    min-width: 300px;
+    font-family: Consolas;
+    font-size: 12px;
+}
+.flickity-single-slide-config {
+    float: left;
+    width: 60%;
+    display: block;
+    min-height: 300px;
+    border-radius: 3px;
+    border: 3px lightgrey dashed;
+    box-sizing: border-box;
+    margin-right: 2%;
+    position: relative;
+}
+
+.flickity-slider-settings {
+    width: 38%;
+    padding: 10px;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 0;
+}
+
+.flickity-slider-settings label {
+    display: block;
+    font-weight: bold;
+    /* margin-bottom: 10px; */
+}
+
+.flickity-slider-settings > p {
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0px -10px 0px rgba(0, 0, 0, 0.08) inset;
+    padding-bottom: 25px;
+    margin-top: 0px;
+}
+
+div#flickity-images-wrapper li:hover {
+    /* transform: rotateX(30deg); */
+    opacity: 1!important;
+}
+
+div#flickity-images-wrapper:hover li {
+    opacity: 0.5;
+}
+a.flickity-question-info {
+    text-decoration: none;
+    color: #88cc88;
+    margin: 0px 10px;
+    line-height: initial;
+}
+span.flickity-setting {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+span.flickity-setting > input,span.flickity-setting > label {
+    display: inline-flex;
+    line-height: 25px;
+    margin: 0px 5px;
+}
+
+a.flickity-question-info > span {
+    line-height: inherit;
+    font-size: 15px;
+    width: 15px;
+    height: 15px;
+    line-height: 25px;
+}
+.wp-flickity-pagecontent p.submit {
+    display: block;
+    width: 100%;
+    float: left;
+}
+/*
+.flickity-single-slide-config:before {
+    content: 'Slider configurator here soon!';
+    display: block;
+    margin: 0px auto;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    line-height: 300px;
+    font-size: 20px;
+}*/
+small.flickity-helper-msg {
+    display: block;
+    float: left;
+    position: absolute;
+    top: 0;
+    left: -350px;
+    opacity: 0;
+    width: 300px;
+    transform: scale(0);
+    padding: 10px;
+    background-color: rgb(139, 139, 139);
+    color: white;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 0px 0px 10px rgba(158, 158, 158, 0.29);
+}
+
+
+span.flickity-setting:hover small.flickity-helper-msg {
+    opacity: 1;
+    transform: scale(1);
+}
+span.flickity-settings-separator {
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #f1f1f1;
+}
+
+.wp-flickity-help-wrapper {
+    background-color: rgba(0, 0, 0, 0.35);
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000000;
+}
+
+.wp-flickity-help-content {
+    position: relative;
+    width: 50%;
+    min-width: 500px;
+    margin: 0px auto;
+    margin-top: 10vh;
+    background-color: white;
+    padding: 35px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.wp-flickity-main-help-description, .wp-flickity-main-help-description > p {
+    font-size: inherit;
+}
+
+.wp-flickity-help-content a {
+    color: #88cc88;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+span#wp-flickity-help-closer {
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    font-size: 30px;
+    color: #88cc88;
+}
+
+span#wp-flickity-help-closer:before {
+    font-size: inherit; 
+}
+small#wp-flickity-credits {
+    padding-top: 15px;
+    letter-spacing: 3px;
+    line-height: 20px;
+    color: gray;
+    font-size: 10px;
+    display: block;
+}
+
+.wp-flickity-posts-btn {
+    background-color: #88cc88;
+    border: 0;
+    color: white!important;
+    padding: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a.wp-flickity-posts-btn.is-on {
+    opacity: 0.5;
+}
+
+a.wp-flickity-posts-btn.is-on:hover {
+    opacity: 1;
+}
+
+.wp-flickity-posts-fields-container {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.wp-flickity-posts-field-block {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+}
+
+.wp-flickity-posts-field-block > label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+iframe#wp-flickity-previewer {
+    width: 100%;
+    height: 468px;
+}
+
+.wp-flickity-pagecontent {
+    display: block;
+    overflow: hidden;
+}
+
+.wp-flickity-pagecontent > form {
+    overflow: hidden;
+}
+
+.querycomposer.show-frame {
+    display: block!important;
+    position: fixed;
+    left: 50vw;
+    z-index: 10000;
+    background-color: white;
+    padding: 35px;
+    box-shadow: 0px 0px 10px -3px black;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50vh;
+    max-height: 100vh;
+    overflow: auto;
+}
+
+button.wp-flickity-button {
+    background-color: #88cc88;
+    color: white;
+    font-weight: normal;
+    border: 0;
+    padding: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.querycomposer select, .querycomposer input {
+    width: 100%;
+}
+
+[name="advanced_query"] {
+    font-size: 12px!important;
+}
+
+[wp-flickity-field-id="query"] {
+    display: none;
+}
